@@ -1,0 +1,75 @@
+body {
+    background-color: hsl(212, 45%, 89%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px; /* Setting the width */
+    height: 600px; /* Setting the height */
+}
+
+.holder {
+    margin-top: 50%;
+    position: relative;
+    left: 90%;
+    top: -10%;
+    bottom: -5%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    padding: 10px;
+    border-radius: 30px;
+    transition-duration: 0.3s;
+    transition-property: transform, box-shadow, rotate;
+}
+
+.boldoutfit {
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    font-family: Outfit;
+    color: hsl(218, 44%, 22%);
+}
+
+.outfit {
+    font-family: Outfit;
+    color: hsl(212, 45%, 89%);
+    font-weight: 400;
+    margin-top: 20px;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+}
+
+.qrcode img {
+    display: block;
+    position: relative;
+    right: 23px;
+    margin: 2 auto;
+    border-radius: 20px;
+    max-width: 110%;
+    max-height: 110%;
+}
+.container {
+    width: 80%;
+    display: block;
+    text-align: center;
+}
+
+.centered-div {
+    background-color: #f0f0f0; /* Color for demonstration */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 700px;
+}
+
+.holder:hover {
+    box-shadow: 0px 0px 60px 5px rgb(105, 162, 139);
+    rotate: 2deg;
+    transform: scale(1.03);
+}
