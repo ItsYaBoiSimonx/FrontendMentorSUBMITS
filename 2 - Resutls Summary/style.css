@@ -1,0 +1,217 @@
+@import url(https://fonts.googleapis.com/css?family=Hanken+Grotesk);
+button:focus {outline:0;}
+.container {
+    background-color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 30px;
+    height: 500px;
+    width: 700px;
+}
+
+.leftpart {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -50%);
+    padding: 20px;
+    border-radius: 30px;
+    height: 500px;
+    width: 350px;
+}
+
+.circle {
+    height: 250px;
+    width: 250px;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 1400;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bigtext {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 100px;
+    color: white;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 800;
+}
+
+.smallertext {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 30px;
+    color: hsla(240, 3%, 94%, 0.7);
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 600;
+}
+
+.smallerertext {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 25px;
+    color: hsla(240, 3%, 94%, 0.7);
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 600;
+}
+
+.great {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 25px;
+    color: hsla(240, 3%, 94%, 1);
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    font-weight: 700;
+    font-size: 30px;
+    transform: translate(-50%, -50%);
+}
+
+.feedbacktext {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 25px;
+    color: hsla(240, 3%, 94%, 0.7);
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    width: 290px;
+    font-weight: 600;
+    font-size: 20px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.summary {
+    font-family: 'Hanken Grotesk', sans-serif;
+    position: absolute;
+    top: 10%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.reaction,
+.memory,
+.verbal,
+.visual {
+    width: 260px;
+    height: 30px;
+    position: absolute;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 20px;
+    transition: rotate 0.3s ease;
+    left: 77%;
+    display: flex; /* Add flex display */
+    align-items: center; /* Center items vertically */
+}
+
+.reaction {
+    background-color: hsla(0, 100%, 67%, 0.2);
+    color: hsl(0, 100%, 67%);
+    top: 24%;
+}
+
+.memory {
+    top: 40%;
+    color: hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%, 0.2);
+}
+
+.verbal {
+    top: 56%;
+    color: hsl(166, 100%, 37%);
+    background-color: hsla(166, 100%, 37%, 0.2);
+}
+
+.visual {
+    top: 72%;
+    color: hsl(234, 85%, 45%);
+    background-color: hsla(234, 85%, 45%, 0.2);
+}
+
+.reaction img,
+.memory img,
+.verbal img,
+.visual img {
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.continuebutton {
+    width: 300px;
+    height: 70px;
+    position: absolute;
+    top: 88%;
+    left: 77%;
+    text-align: center;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    border: none;
+    background-color: hsl(224, 30%, 27%);
+    transform: translate(-50%, -50%);
+    color: white;
+    border-radius: 30px;
+    transition: background 1s ease; /* Apply the transition to the background-color property */
+    cursor: pointer;
+}
+
+.continuebutton:hover {
+    background: linear-gradient(135deg, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    border: none;
+}
+
+.verbal:hover, .memory:hover, .visual:hover, .reaction:hover {
+    rotate: 2deg;
+}
+
+img {
+    height: 25px;
+    width: 25px;
+    display: block;
+}
+
+.mediumtext {
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+    text-align: right; /* Align the text to the right */
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.inlinedtext {
+    font-weight: 400;
+    font-size: 20px;
+    width: 130px;
+    color: grey;
+    text-align: right; /* Align the text to the right */
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
